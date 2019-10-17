@@ -1,0 +1,29 @@
+x = [1, 2, 3, 4, 5, 6]
+
+
+def top():
+    y = x.pop()
+    x.append(y)
+    print(y)
+    print(x)
+
+def peep(i):
+    a = i-1
+    y = x.pop(a)
+    x.insert(a, y)
+    print(y)
+    print(x)
+
+def empty():
+    x = []
+    print(x)
+
+
+top()
+
+peep(2)
+
+isempty()
+
+empty()
+
