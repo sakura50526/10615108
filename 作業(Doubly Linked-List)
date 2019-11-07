@@ -1,0 +1,14 @@
+class DoubleLinkedNode():
+    def __init__(self, data = None, last_node = None, next_node = None):
+        self.data = data
+        self.next_node = next_node
+        self.last_node = last_node
+        if next_node:
+            next_node.last_node = self
+
+    def append(self, data, last_node):
+        node = ListNode()
+        self.last_node = node
+
+    def remove(self, data: int):
+        self.data.remove()
